@@ -1,0 +1,73 @@
+.header{
+    text-align: center;
+    background-color: lightgray;
+    color: black;
+    padding: 20px;
+}
+
+.header h3{
+    text-decoration:underline black;
+    font-size: x-large;
+    margin: 40px;
+}
+
+.header p{
+    text-align: center;
+    margin: 10px;
+}
+
+.container{
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+}
+
+.container button{
+    border: 3px black solid;
+    width: 10%;
+}
+
+.container button:hover{
+    color: white;
+    background-color: red;
+}
+
+
+.container #time{
+    background: lightgreen;
+    color: black;
+    padding: 15px;
+}
+
+
+.form-container{
+    text-align: center;
+    padding: 20px;
+    width: 80%;
+    margin: auto;
+}
+
+.form-container .my-form label{
+    display: block;
+    padding: 10px;
+    margin: 5px;
+}
+
+.form-container .my-form input[type="text"], input[type="email"], input[type="datetime-local"]{
+    width: 15%;
+    border: 2px black solid;
+    border-radius: 15px;
+}
+
+.form-container input[type="submit"]{
+    margin: 20px;
+    padding: 5px;
+    background-color: lightpink;
+    color: black;
+    font-weight: bolder;
+}
+
+.form-container input[type="submit"]:hover{
+    background-color: greenyellow;
+    color: black;
+}

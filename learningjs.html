@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Learning JavaScript</title>
+        <link rel="stylesheet" type="text/css" href="D:\Users\Web dev\CSS\learnjs.css">
+        <script src="D:\Users\Web dev\JavaScript\js1.js"></script>
+    </head>
+
+    <body>
+        <div class="header">
+            <h3 id="heading">Learning JavaScript</h3>
+            <p>With Rohith Songala</p>
+        </div>
+
+        <!-- <script>
+            // datatypes:
+            // Number
+            // String
+            // Array
+            // object
+
+            // var _number1 = '34';
+            // var $number2 = '20';
+
+            // alert('my fav number is ' + _number1+$number2);
+
+            // var colors = ['red', 'black', 'blue'];
+            // var colors = new Array('red', 'yellow')
+            // colors.push('apple')
+            // colors.pop()
+            // colors[0] = 'green'
+            // alert(colors.sort());
+            // console.log("Hello Rohith")
+            // for(var i=0; i<=10; i++){
+            //     // alert(i)
+            //     console.log(i)
+            // }
+
+            // var i=0;
+            // console.log('While Loop')
+            // while (i<=10){
+            //     console.log(i);
+            //     i+=1;
+            // }
+
+            // var numbers = [23,34,45,56,78,79,90,12]
+            // numbers.sort()
+            // numbers.forEach(function(number){
+            //     console.log(number)
+            // })
+
+            // for (var i=0; i<numbers.length; i++){
+            //     console.log(numbers[i])
+            // }
+
+            // for(var i=0; i<numbers.length; i++){
+            //     if (numbers[i]%2 == 0){
+            //         console.log(numbers[i])
+            //     }
+            // }
+
+            // var fruit = 'grapes';
+            // switch(fruit){
+            //     case "banana":
+            //         alert('Wrong')
+            //         break;
+            //     case('apple'):
+            //         alert('right')
+            //         break;
+            //     default:
+            //         alert('I love all fruits')
+            //         break;
+            // }
+
+            // let num = 1/0;
+            // console.log(num)
+
+            // let num=10_00_000
+            // console.log(num)
+            // console.log(Number.MAX_VALUE)
+            // console.log(Number.MIN_VALUE)
+
+            // console.log(8>9)
+            // console.log("10"+"9")
+           
+            // alert("script tags internally")
+        </script> -->
+
+        <!-- <div class="container">
+            <button onclick="doClick()">Click Me</button>
+        </div>
+
+        <script>
+            function doClick(){
+                alert('Click Me button Is Clicked!')
+            }
+        </script> -->
+
+        <!-- <div class="container">
+            <button onclick="this.innerHTML = 'You clicked!'">Click Me</button>
+        </div> -->
+
+        <!-- <div class="container">
+            <button onclick="doClick(this)">Click Me</button>
+        </div>
+
+        <script>
+            function doClick(id){
+                id.innerHTML = "You Clicked Rohith!"
+                return id.innerHTML
+            }
+        </script> -->
+
+        <!-- <div class="container">
+            <button onclick="changeText()">Click Me</button>
+        </div>
+
+        <script>
+            function changeText(){
+                var i = document.getElementById('heading')
+                i.innerHTML = 'You Clicked!'
+                return i.innerHTML
+            }
+        </script> -->
+
+        <!-- <div class="container">
+            <h1 id="time"></h1>
+            <button onmouseover="showDate()">Show DateTime</button>
+        </div>
+
+        <script>
+            function showDate(){
+                var time = document.getElementById('time')
+                time.innerHTML = Date();
+                return time.innerHTML;
+            }
+        </script> -->
+
+        <!-- <div class="container">
+            
+            <button onmouseout="clearDate()" onmouseover="showDate()">Show DateTime</button>
+            <h1 id="time">Live Data&Time: </h1>
+        </div>
+
+        <script>
+            function showDate(){
+                var time = document.getElementById('time')
+                time.innerHTML = Date();
+                return time.innerHTML;
+            }
+
+            function clearDate(){
+                var timeClear = document.getElementById('time')
+                timeClear.innerHTML = null;
+                return timeClear.innerHTML;
+            }
+        </script> -->
+
+        <div class="form-container">
+
+            <form action="index.html" method="post" name="firstForm" onsubmit="return validateForm()">
+                <div class="my-form">
+                    <label>First Name</label>
+                    <input type="text" name="fname" placeholder="First Name">
+                </div>
+
+                <div class="my-form">
+                    <label>Last Name</label>
+                    <input type="text" name="lname" placeholder="Last Name">
+                </div>
+
+                <div class="my-form">
+                    <label>Email</label>
+                    <input type="email" name="email" placeholder="Email">
+                </div>
+
+                <div class="my-form">
+                    <label>D.O.B</label>
+                    <input type="datetime-local" name="dob" placeholder="Birthday">
+                </div>
+
+                <!-- <div class="my-form">
+                    <label>Background</label>
+                    <select name="background" id="background" onchange = "changeBackground(this)">
+                        <option value="green">Green</option>
+                        <option value="yellow">Yellow</option>
+                        <option value='cyan'>Cyan</option>
+                    </select>
+                </div> -->
+
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+
+        <!-- <script>
+            function changeBackground(x){
+                console.log('Rohith!', x.value)
+                var body = document.getElementById('main-body')
+                // var heading = document.getElementById('heading')
+                // body.style.backgroundColor = x.value;
+                heading.style.color = x.value
+            }
+        </script> -->
+
+        <script>
+            function validateForm(){
+                var firstName = document.forms['firstForm']['fname'].value
+                var lastName = documents.forms['firstForm']['lname'].value
+                if (firstName == null || firstName == ""){
+                    alert('First Name is Required!');
+                    return false;
+                }
+
+                if (lastName == null || lastName == ""){
+                    alert('Last name is required');
+                    return false;
+                }
+            }
+        </script>
+
+
+    </body>
+</html> 
